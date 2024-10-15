@@ -1,0 +1,14 @@
+
+1. Indexing
+	Create indexes for frequently queried data
+2. Review Schema Design
+	Evaluate Embedding vs. Referencing: 
+		Reassess schema design to ensure optimal performance. Look into embedding frequently accessed related data to reduce the need for joins. 
+3. Optimizing Queries:
+	Analyzing query patterns using explain() method 
+	Avoiding large number of documents being returned by using $limit and $skip
+	Use projection to limit number of fields returned
+
+I do not have much experience with Mongodb, but other things I found online are
+
+Sharding, Hardware Improvements, Optimize Storage, Regular Maintenance, Monitoring and Alerts, and Read Preferences

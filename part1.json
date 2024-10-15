@@ -1,0 +1,46 @@
+{
+  "authors": {
+    "_id": "ObjectId",
+    "name": "string",
+    "biography": "string",
+    "nationality": "string"
+  },
+
+  "genres": {
+    "_id": "ObjectId",
+    "name": "string"
+  },
+  "books": {
+    "_id": "ObjectId",
+    "title": "string",
+    "authorId": "ObjectId",
+    "genreId": "ObjectId",
+    "isbn": "string",
+    "publicationYear": "number",
+    "price": "number",
+    "ratings": {
+      "average": "number",
+      "count": "number"
+    }
+  },
+  "reviews": [
+    {
+      "customerId": "ObjectId",
+      "review": "string",
+      "rating": "number",
+      "ratingDate": "date"
+    }
+  ],
+  "customers": {
+    "_id": "ObjectId",
+    "name": "string",
+    "email": "string",
+    "purchases": [
+      {
+        "bookId": "ObjectId",
+        "purchaseDate": "date",
+        "price": "number"
+      }
+    ]
+  }
+}
